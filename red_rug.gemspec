@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
     'lib/red_rug.rb'
   ]
   s.homepage        =   'http://redrug.fossrec.com'
-  s.has_rdoc        =   false
+  s.has_rdoc        =   true
   s.license         =   'OWL'
 
   s.post_install_message    =   <<-EOF
