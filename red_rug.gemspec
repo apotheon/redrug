@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
     'owl.txt',
     'lib/red_rug.rb'
   ]
-  s.homepage        =   'http://red_rug.fossrec.com'
+  s.homepage        =   'http://redrug.fossrec.com'
   s.has_rdoc        =   false
   s.license         =   'OWL'
 
