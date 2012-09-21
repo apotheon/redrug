@@ -1,7 +1,7 @@
 load 'lib/red_rug.rb'
 
 Gem::Specification.new do |s|
-  s.name            =   'red_rug'
+  s.name            =   'redrug'
   s.version         =   RedRug.version
   s.authors         =   ['Chad Perrin']
   s.date            =   '2012-09-20'
@@ -21,5 +21,10 @@ Gem::Specification.new do |s|
   s.has_rdoc        =   false
   s.license         =   'OWL'
 
+  s.post_install_message    =   <<-EOF
+    Thank you for using RedRug.  Require "red_rug" to load this library.
+  EOF
+
+  s.required_ruby_version   =   '>= 1.9.3'
   s.add_runtime_dependency 'redcarpet'
 end
