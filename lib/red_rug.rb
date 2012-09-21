@@ -5,6 +5,6 @@ module RedRug
 
   def self.to_html(mstring)
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
-    print markdown.render(mstring)
+    markdown.render(mstring)
   end
 end
