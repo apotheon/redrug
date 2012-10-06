@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+require 'optparse'
+require 'red_rug'
+
+help_text = {
+  :help         => 'Display this help text.',
+  :version      => 'Display version and license information.'
+}
+
+@usage = <<EOF
+
+USAGE: #{File.basename $0} [options] FILE
+
+EOF
+
+version_help = <<EOF
+
+RedRug #{RedRug.version}, Copyright 2012 Chad perrin
+May be distributed under the terms of the Open Works License.
+
+EOF
+
+OptionParser.new do |opts|
+  opts.banner = @usage
+
+  opts.on('--help', '-h', help_text[:help]) do
+    puts opts
+    puts
+    exit(0)
+  end
+
+  opts.on_tail('--version', help_text[:version]) do
+    puts version_help
+    exit(0)
+  end
+end.parse!
+
+if 1 > ARGV.size
+  puts @usage
+  puts %Q{    Try "#{File.basename $0} --help" for usage information}
+  puts
+else
+  file = File.read(ARGV[0])
+  puts RedRug.to_html(file)
+end
