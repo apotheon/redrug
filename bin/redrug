@@ -15,7 +15,7 @@ EOF
 
 version_help = <<EOF
 
-RedRug #{RedRug.version}, Copyright 2012 Chad perrin
+RedRug #{RedRug.version}, Copyright 2012 Chad Perrin
 May be distributed under the terms of the Open Works License.
 
 EOF
@@ -35,11 +35,8 @@ OptionParser.new do |opts|
   end
 end.parse!
 
-if 1 > ARGV.size
-  puts @usage
-  puts %Q{    Try "#{File.basename $0} --help" for usage information}
-  puts
-else
-  file = File.read(ARGV[0])
-  puts RedRug.to_html(file)
-end
+@content = String.new
+
+$<.each {|line| @content << line }
+
+puts RedRug.to_html @content
