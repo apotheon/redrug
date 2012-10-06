@@ -16,7 +16,7 @@ This method returns the version number of the RedRug gem.
 
 =end
 
-  def self.version; '0.2.1'; end
+  def self.version; '0.2.2'; end
 
 =begin rdoc
 
