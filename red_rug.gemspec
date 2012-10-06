@@ -25,6 +25,6 @@ Gem::Specification.new do |s|
     Thank you for using RedRug.  Require "red_rug" to load this library.
   EOF
 
-  s.required_ruby_version   =   '>= 1.9.3'
+  s.required_ruby_version   =   '>= 1.9.2'
   s.add_runtime_dependency 'redcarpet'
 end
