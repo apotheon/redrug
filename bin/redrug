@@ -11,6 +11,9 @@ help_text = {
 
 USAGE: #{File.basename $0} [options] FILE
 
+This utility reads the contents of a Markdown formatted FILE, translates them
+to HTML, and prints the translated text to standard output.
+
 EOF
 
 version_help = <<EOF
