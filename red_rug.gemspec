@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name            =   'redrug'
   s.version         =   RedRug.version
   s.authors         =   ['Chad Perrin']
-  s.date            =   '2013-01-15'
+  s.date            =   '2013-08-20'
   s.description     =   <<-EOF
     RedRug is a wrapper for Redcarpet, intended to provide more convenient
     interfaces for common Markdown parsing use cases.
