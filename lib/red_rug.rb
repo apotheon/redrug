@@ -1,4 +1,5 @@
 require 'redcarpet'
+require 'versionize'
 
 =begin rdoc
 
@@ -9,14 +10,12 @@ common tasks.  At present, only HTML output is supported.
 =end
 
 module RedRug
-
-=begin rdoc
-
-This method returns the version number of the RedRug gem.
-
-=end
-
-  def self.version; '0.2.4'; end
+  include Versionize
+  @version = {
+    :major      =>  0,
+    :minor      =>  2,
+    :revision   =>  5
+  }
 
 =begin rdoc
 
