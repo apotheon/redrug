@@ -7,6 +7,10 @@ RedRug provides a simplified interface to the functionality of the Redcarpet
 gem for Markdown handling, intended to provide convenience in execution of
 common tasks.  At present, only HTML output is supported.
 
+To begin using RedRug in your code, require it.  Example:
+
+        require 'red_rug'
+
 =end
 
 module RedRug
@@ -14,7 +18,7 @@ module RedRug
   @version = {
     :major      =>  0,
     :minor      =>  2,
-    :revision   =>  5
+    :revision   =>  6
   }
 
 =begin rdoc
