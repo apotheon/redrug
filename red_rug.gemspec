@@ -33,4 +33,5 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version   =   '>= 1.9.2'
   s.add_runtime_dependency 'redcarpet'
+  s.add_runtime_dependency 'versionize'
 end
