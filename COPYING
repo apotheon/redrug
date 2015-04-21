@@ -1,12 +1,17 @@
-RedRug is distributed under the terms of the Open Works License.  The Open
-Works License is a copyfree license.
+RedRug is distributed under the terms of the Detachable Public License.  The
+Detachable Public License is a copyfree license.
 
 RedRug depends on Redcarpet, which is distributed under the terms of the ISC
 License.  The ISC License is a copyfree license.
 
-See http://copyfree.org for more information about copyfree licensing.
+RedRug also depends on Versionize, which is distributed under the terms of the
+same license as RedRug.  That's awfully convenient.
 
-See https://github.com/vmg/redcarpet for more information about Redcarpet.
+See http://copyfree.org for more information about copyfree licensing in
+general, and about the Detachable Public License and ISC License in particular.
 
-See http://owl.apotheon.org/ for more information about the Open Works License,
-and the `owl.txt` file for the text of the Open Works License.
+See https://github.com/vmg/redcarpet for more information about Redcarpet.  See
+http://fossrec.com/u/apotheon/versionize for more information about Versionize.
+See http://fossrec.com/u/apotheon/redrug for more information about RedRug.
+
+See the LICENSE file for the text of the Detachable Public License.
