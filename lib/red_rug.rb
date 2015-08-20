@@ -17,8 +17,8 @@ module RedRug
   include Versionize
   @version = {
     :major      =>  0,
-    :minor      =>  2,
-    :revision   =>  6
+    :minor      =>  3,
+    :revision   =>  0
   }
 
 =begin rdoc
@@ -35,8 +35,12 @@ Example:
 
 =end
 
-  def self.to_html(markdown_string)
-    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+  def self.to_html(markdown_string, options=Hash.new)
+    unless options.has_key? :escape_html
+      options[:escape_html] = false
+    end
+
+    markdown = Redcarpet::Markdown.new Redcarpet::Render::HTML.new(options)
     markdown.render(markdown_string)
   end
 
