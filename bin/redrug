@@ -3,8 +3,9 @@ require 'optparse'
 require 'red_rug'
 
 help_text = {
-  :help         => 'Display this help text.',
-  :version      => 'Display version and license information.'
+  escape:   'Escape all embedded HTML before parsing markdown.',
+  help:     'Display this help text.',
+  version:  'Display version and license information.'
 }
 
 @usage = <<EOF
@@ -23,8 +24,14 @@ May be distributed under the terms of the Open Works License.
 
 EOF
 
+options = Hash.new
+
 OptionParser.new do |opts|
   opts.banner = @usage
+
+  opts.on('--escape', '-e', help_text[:escape]) do
+    options[:escape_html] = true
+  end
 
   opts.on('--help', '-h', help_text[:help]) do
     puts opts
@@ -38,8 +45,8 @@ OptionParser.new do |opts|
   end
 end.parse!
 
-@content = String.new
+content = String.new
 
-$<.each {|line| @content << line }
+$<.each {|line| content << line }
 
-puts RedRug.to_html @content
+puts RedRug.to_html(content, options)
