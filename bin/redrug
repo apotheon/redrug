@@ -8,19 +8,19 @@ help_text = {
   version:  'Display version and license information.'
 }
 
-@usage = <<EOF
+@usage = <<-EOF
 
-USAGE: #{File.basename $0} [options] FILE
+  USAGE: #{File.basename $0} [options] FILE
 
-This utility reads the contents of a Markdown formatted FILE, translates them
-to HTML, and prints the translated text to standard output.
+  This utility reads the contents of a Markdown formatted FILE, translates them
+  to HTML, and prints the translated text to standard output.
 
 EOF
 
-version_help = <<EOF
+version_help = <<-EOF
 
-RedRug #{RedRug.version}, Copyright 2012 Chad Perrin
-May be distributed under the terms of the Open Works License.
+  RedRug #{RedRug.version}, Copyright 2012 Chad Perrin
+  It may be distributed under the terms of the Open Works License.
 
 EOF
 
@@ -49,4 +49,4 @@ content = String.new
 
 $<.each {|line| content << line }
 
-puts RedRug.to_html(content, options)
+puts RedRug.to_html content, options
