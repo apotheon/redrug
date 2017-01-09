@@ -2,7 +2,11 @@
 
 The redcarpet library can be a bit cumbersome to use, and redrug aims to
 rectify this problem by wrapping it with simpler interfaces for common use
-cases.
+cases.  Three places to get information about RedRug include:
+
+* [Fossil Repository](https://fossrec.com/u/apotheon/redrug)
+* [GitHub Mirror](https://github.com/apotheon/redrug)
+* [Ruby Gem Page](https://rubygems.org/gems/redrug)
 
 ## Installation
 
