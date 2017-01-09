@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.files           =   [
     'COPYING',
     'LICENSE',
-    'README',
+    'README.md',
     'lib/red_rug.rb',
     'bin/redrug',
     'spec/red_rug_spec.rb',
