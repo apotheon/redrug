@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name            =   'redrug'
   s.version         =   RedRug.version
   s.authors         =   ['Chad Perrin']
-  s.date            =   '2015-08-19'
+  s.date            =   '2021-08-05'
   s.description     =   <<-EOF
     RedRug is a wrapper for Redcarpet, intended to provide more convenient
     interfaces for common Markdown parsing use cases.
@@ -13,16 +13,16 @@ Gem::Specification.new do |s|
   s.email           =   'code@apotheon.net'
   s.files           =   [
     'COPYING',
-    'LICENSE',
     'README.md',
+    'coil.txt',
+    'dpl.txt',
     'lib/red_rug.rb',
     'bin/redrug',
     'spec/red_rug_spec.rb',
     'spec/spec_helper.rb'
   ]
   s.homepage        =   'http://fossrec.com/u/apotheon/redrug'
-  s.has_rdoc        =   true
-  s.license         =   'DPL'
+  s.licenses        =   ['COIL', 'DPL']
   s.bindir          =   'bin'
   s.executables     =   ['redrug']
 

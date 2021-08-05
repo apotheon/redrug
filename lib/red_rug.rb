@@ -18,7 +18,7 @@ module RedRug
   @version = {
     :major      =>  0,
     :minor      =>  3,
-    :revision   =>  1
+    :revision   =>  2
   }
 
 =begin rdoc
