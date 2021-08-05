@@ -1,4 +1,6 @@
+require 'rspec'
 load '../lib/red_rug.rb'
+
 RSpec.describe RedRug do
   describe 'to_html' do
     it 'returns HTML equivalent of Markdown input' do
