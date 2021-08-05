@@ -20,7 +20,8 @@ EOF
 version_help = <<-EOF
 
   RedRug #{RedRug.version}, Copyright 2012 Chad Perrin
-  It may be distributed under the terms of the Open Works License.
+  It may be distributed under the terms of the Copyfree Open Innovation License
+  or the Detachable Public License, at your discretion.
 
 EOF
 
